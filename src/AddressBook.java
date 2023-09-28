@@ -7,12 +7,13 @@ public class AddressBook {
     public AddressBook(){
         myBuddies = new ArrayList<>();
     }
-
+//Add Buddy to Addressbook
     public void addBuddy(BuddyInfo buddy){
         if(buddy != null) {
             myBuddies.add(buddy);
         }
     }
+    //Remove buddy from addressbook
     public BuddyInfo removeBuddy(int buddy){
         if(buddy >= 0 && buddy < myBuddies.size()){
             return myBuddies.remove(buddy);
